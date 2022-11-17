@@ -13,7 +13,7 @@ int main()
         scanf("%d", &player_response);
         if (player_response < 5 && player_response > 0)
         {
-            printf("%d",5-player_response);
+            printf("                                                 %d",5-player_response);
             s=s+5;
             if(s==20){
                 printf("\nSince you will now have to pick up the 21st matchstik you loose.");
