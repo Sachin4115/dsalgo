@@ -21,10 +21,10 @@ int main()
                 }
             }
             else{
+                to_be_changed++;
                 if(to_be_changed>k){
                     break;
                 }
-                to_be_changed++;
             }
         }
     }
