@@ -9,7 +9,7 @@ int main()
     fgets(str, 100, stdin);
     printf("Enter the minimum time replacement can take place : ");
     scanf("%d",&k);
-    for(int i=0;i<strlen(str);i++){
+    for(int i=0;i<strlen(str)-1;i++){
         freq=0;
         to_be_changed=0;
         for(int j=i;j<strlen(str);j++){

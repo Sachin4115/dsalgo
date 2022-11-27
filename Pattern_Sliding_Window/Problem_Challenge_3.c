@@ -3,7 +3,7 @@
 
 int main()
 {
-    int flag=0,start,stop,position,i,result=999999,result_temp=1000000,open,close;
+    int flag=0,start,stop,position,i,result=9,result_temp=10,open,close;
     char str[100],substr[100],temp[100];
     printf("Enter the string : ");
     fgets(str,100,stdin);
@@ -37,7 +37,7 @@ int main()
             }
         }
     }
-    if(result!=999999){
+    if(result!=9){
         for(i=open;i<=close;i++){
             printf("%c",str[i]);
         }

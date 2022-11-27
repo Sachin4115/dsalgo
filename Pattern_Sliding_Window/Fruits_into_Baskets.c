@@ -4,13 +4,13 @@
 int main()
 {
     int n,freq1,freq2,max1=0,max2=0;
-    char arr[100],element1,element2;
+    char arr[100],element1='0',element2;
     printf("Enter the elements of the array : ");
     fgets(arr,100,stdin);
     n=strlen(arr);
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n-1;i++){
         freq1=0;
-        for(int j=i;j<n;j++){
+        for(int j=i;j<n-1;j++){
             if(arr[i]==arr[j]){
                 freq1++;
                 if(freq1>max1){
@@ -20,9 +20,9 @@ int main()
             }
         }
     }
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n-1;i++){
         freq2=0;
-        for(int j=i;j<n;j++){
+        for(int j=i;j<n-1;j++){
             if(arr[i]!=element1)
             {
                 if(arr[i]==arr[j]){

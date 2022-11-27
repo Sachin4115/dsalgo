@@ -21,7 +21,7 @@ int main()
                     if(k==strlen(substr)-1){
                         strcpy(substr,temp);
                         k=0;
-                        printf("%d ",(i-(strlen(temp))+2));
+                        printf("%d ",s);
                         s++;
                         i=s-1;
                     }

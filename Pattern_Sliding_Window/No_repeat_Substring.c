@@ -7,9 +7,8 @@ int main()
     int temp,n=0,k;
     printf("Enter the string : ");
     fgets(str, 100, stdin);
-    printf("Enter the length of the substring : ");
-    scanf("%d", &k);
-    for(int i=0;i<strlen(str);i++){
+    k=strlen(str);
+    for(int i=0;i<strlen(str)-1;i++){
         temp=0;
         for(int j=i-1;j>=0;j--){
             if(str[i]==str[j]){
@@ -21,7 +20,7 @@ int main()
             n++;
         }
     }
-    for(int i=0;i<k;i++){
+    for(int i=0;i<n;i++){
         printf("%c",distinct[i]);
     }
     return 0;
