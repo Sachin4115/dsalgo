@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "limits": "c",
-        "math.h": "c"
+        "math.h": "c",
+        "iostream": "cpp"
     }
 }
