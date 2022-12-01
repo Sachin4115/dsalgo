@@ -3,5 +3,6 @@
         "limits": "c",
         "math.h": "c",
         "iostream": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }
