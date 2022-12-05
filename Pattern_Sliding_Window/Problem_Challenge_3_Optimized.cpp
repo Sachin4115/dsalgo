@@ -40,7 +40,6 @@ int main()
             window_start++;
         }
     }
-    // str.substr(start,length);
     if(length<str.length()){
         subs=str.substr(start,length);
         cout<<subs;
