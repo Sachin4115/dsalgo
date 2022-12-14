@@ -17,7 +17,8 @@
         "stdexcept": "cpp",
         "streambuf": "cpp",
         "system_error": "cpp",
-        "tuple": "cpp"
+        "tuple": "cpp",
+        "limits": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }
