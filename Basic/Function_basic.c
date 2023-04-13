@@ -13,9 +13,9 @@ void greater_number(){
     int a,b,c;
     printf("Enter the first number that you want to compare : ");
     scanf("%d",&a);
-    printf("Enter the first number that you want to compare : ");
+    printf("Enter the second number that you want to compare : ");
     scanf("%d",&b);
-    printf("Enter the first number that you want to compare : ");
+    printf("Enter the third number that you want to compare : ");
     scanf("%d",&c);
     if(a>b && a>c){
         printf("The largest number between %d , %d and %d is %d\n.",a,b,c,a);
@@ -29,9 +29,9 @@ void greater_number(){
 }
 void add_two_number(){
     int a,b;
-    printf("Enter the first number that you want to compare : ");
+    printf("Enter the first number that you want to add : ");
     scanf("%d",&a);
-    printf("Enter the first number that you want to compare : ");
+    printf("Enter the first number that you want to add : ");
     scanf("%d",&b);
     printf("The sum of the given numbers %d and %d is %d.\n",a,b,a+b);
 }

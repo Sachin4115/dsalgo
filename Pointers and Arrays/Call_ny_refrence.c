@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void square(int *n);
+void square(int* p);
 int main()
 {
     int n;
@@ -11,7 +11,7 @@ int main()
     return 0;
 }
 //call by refrence
-void square(int *n){
-    *n = (*n)*(*n);
-    printf("square = %d\n",*n);
+void square(int* p){
+    *p = (*p)*(*p);
+    printf("square = %d\n",*p);
 }

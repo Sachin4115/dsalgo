@@ -35,7 +35,7 @@ int main()
         break;
     case 9 :
         printf("Nice PlOOt");
-        break;
+        // break;
     case 0 :
         printf("Give up on your dreams and die");
         break;
