@@ -34,7 +34,7 @@ int main()
                 flag=0;
             }
             else if(abs(Tsum-sum)<abs(mins)){
-                mins=min(mins,Tsum-sum);
+                mins=Tsum-sum;
             }
             if(mins>0){
                 left++;

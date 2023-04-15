@@ -40,10 +40,10 @@ int main()
                 cout<<"]"<<endl;
                 left++;
                 right--;
-                while(sum<Tsum&&arr[left]==arr[left-1]){
+                while(left<right&&arr[left]==arr[left-1]){
                     left++;
                 }
-                while(sum>Tsum&&arr[right]==arr[right+1]){
+                while(left>right&&arr[right]==arr[right+1]){
                     right--;
                 }
             }
