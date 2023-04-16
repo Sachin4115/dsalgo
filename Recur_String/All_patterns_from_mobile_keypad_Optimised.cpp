@@ -11,6 +11,7 @@ void allcombinations(vector <vector<char>> &keypad,vector <int> &key,unordered_s
     }
     int n = key[index];
     for(char c : keypad[n])
+//**
         allcombinations(keypad,key,comb,c+results,index-1);
 }
 int main()
