@@ -8,8 +8,8 @@ void Hanoi(int n,string a,string b,string c){
     cout<<n<<"["<<a<<"->"<<b<<"]"<<endl;
     Hanoi(n-1,c,b,a);
 
-
 }
+
 int main()
 {
     string A="10",B="11",C="12";
