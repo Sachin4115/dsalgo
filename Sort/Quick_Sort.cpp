@@ -21,7 +21,7 @@ void quicksort(int arr[],int end,int start){
 }
 int main()
 {
-    int arr[]={9,-3,5,2,6,8,-6,1,3};
+    int arr[]={4,1,3,9,7};
     int n=sizeof(arr)/sizeof(arr[0]);
     quicksort(arr,n-1,0);
     for(int i=0;i<n;i++)
