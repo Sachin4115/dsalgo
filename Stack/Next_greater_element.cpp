@@ -9,7 +9,7 @@ vector <int> NextGreat(vector<int> &arr){
     st.push(0);
     for(int i=1;i<arr.size();i++){
         while(!st.empty() && arr[i]>arr[st.top()]){
-            ans[st.top()]=arr[i];
+            ans[st.top()]=i;
             st.pop();
         }
         st.push(i);
@@ -19,7 +19,7 @@ vector <int> NextGreat(vector<int> &arr){
 
 int main()
 {
-    vector<int> arr = {4,6,3,1,0,9,5,6,7,3,2};
+    vector<int> arr = {2,1,5,6,2,3,0,2,1,5,6,2,3};
     vector <int> ans = NextGreat(arr);
     for(auto a:ans)
         cout<<a<<" ";
