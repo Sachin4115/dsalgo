@@ -36,15 +36,15 @@ int main()
     //     cout<<st.top()<<endl;
     //     st.pop();
     // }
-    // insertAtB(st,3);
-    // while(!st.empty()){
-    //     cout<<st.top()<<endl;
-    //     st.pop();
-    // }
-    insert(st,2,3);
+    insertAtB(st,3);
     while(!st.empty()){
         cout<<st.top()<<endl;
         st.pop();
     }
+    // insert(st,2,3);
+    // while(!st.empty()){
+    //     cout<<st.top()<<endl;
+    //     st.pop();
+    // }
     return 0;
 }
