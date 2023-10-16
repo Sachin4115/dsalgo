@@ -44,6 +44,6 @@ string convert(string s){
 
 int main()
 {
-    cout<<convert("(a-b/c)*(a/k-l)");
+    cout<<convert("h^m^q^(7-4)");
     return 0;
 }
