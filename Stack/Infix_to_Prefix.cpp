@@ -47,6 +47,6 @@ string convert(string s){
 
 int main()
 {
-    cout<<convert("(a-b/c)*(a/k-l)");
+    cout<<convert("a*(b-c)/d+e");
     return 0;
 }
