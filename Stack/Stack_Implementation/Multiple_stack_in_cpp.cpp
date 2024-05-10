@@ -59,6 +59,7 @@ int main()
     for(int i=0;i<10;i++){
         v.push_back(CustomStack());
     }
+    // vector <CustomStack> v(10,CustomStack());
     v[0].display();
     cout<<v[0].Top()<<endl;
     cout<<v[0].Size()<<endl;
