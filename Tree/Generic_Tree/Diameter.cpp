@@ -51,10 +51,8 @@ int diameter(node* root){
             d2=d;
         }
     }
-    di=max(d1,d1+d2+2);
+    di=max(di,d1+d2+2);
     return d1+1;
-
-
 }
 
 int main()
