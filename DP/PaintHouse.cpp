@@ -10,11 +10,11 @@ int main()
     int R[n] = {1,5,3,1};
     int G[n] = {5,8,2,2};
     int B[n] = {7,4,9,4};
-    int r=R[0],g=G[0],b=B[0];
+    long r=R[0],g=G[0],b=B[0];
     for(int i=1;i<n;i++){
-        int nr=min(g,b)+R[i];
-        int ng=min(r,b)+G[i];
-        int nb=min(g,r)+B[i];
+        long nr=min(g,b)+R[i];
+        long ng=min(r,b)+G[i];
+        long nb=min(g,r)+B[i];
         r=nr;
         b=nb;
         g=ng;
