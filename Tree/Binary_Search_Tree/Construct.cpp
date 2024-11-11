@@ -39,10 +39,23 @@ void display(node* root){
     display(root->right);
 }
 
+node* addNode(node* root, int v){
+    if(root==NULL)
+        return new node(v);
+    if(root->data>v){
+        root->left=addNode(root->left,v);
+    }else{
+        root->right=addNode(root->right,v);
+    }
+    return root;
+}
+
 int main()
 {
     vector<int> arr = {12 , 25 , 37 , 50 , 62 , 75 , 87};
     node* root = construct(arr,0,arr.size()-1);
     display(root);
+    cout<<endl;
+    display(addNode(root,90));
     return 0;
 }
