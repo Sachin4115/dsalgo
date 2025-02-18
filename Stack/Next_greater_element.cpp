@@ -22,6 +22,6 @@ int main()
     vector<int> arr = {2,1,5,6,2,3,0,2,1,5,6,2,3};
     vector <int> ans = NextGreat(arr);
     for(auto a:ans)
-        cout<<a<<" ";
+        cout<<arr[a]<<" ";
     return 0;
 }
