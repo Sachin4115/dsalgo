@@ -12,6 +12,7 @@
         "cmath": "cpp",
         "complex": "cpp",
         "bitset": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "vector": "cpp"
     }
 }
