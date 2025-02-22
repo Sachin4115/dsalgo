@@ -28,6 +28,9 @@ int main()
         dp[i]=m+1;
         ans=max(ans,dp[i]);
     }
+    for(int i=0;i<n;i++){
+        cout<<dp[i]<<" ";
+    }
     cout<<ans<<endl;
     queue<step*>q;
     for(int i=0;i<n;i++){
