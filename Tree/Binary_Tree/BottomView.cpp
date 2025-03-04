@@ -4,22 +4,22 @@
 #include <map>
 using namespace std;
 
-class Node {
+class node {
     public:
     int data;
-    Node *left;
-    Node *right;
+    node *left;
+    node *right;
 
-    Node(int val) {
+    node(int val) {
         data = val;
         left = right = nullptr;
     }
 };
 
-vector<int> TopView(Node* root){
+vector<int> TopView(node* root){
     if(!root) return  {};
-    Node* t = NULL;
-    queue<pair<Node* , int>> q;
+    node* t = NULL;
+    queue<pair<node* , int>> q;
     map<int,int> mp;
     q.push({root,0});
     while(!q.empty()){
@@ -39,13 +39,13 @@ vector<int> TopView(Node* root){
 
 int main()
 {
-    Node *root = new Node(1);
-    root->left = new Node(2);
-    root->right = new Node(3);
-    root->left->left = new Node(4);
-    root->left->right = new Node(5);
-    root->right->left = new Node(6);
-    root->right->right = new Node(7);
+    node *root = new node(1);
+    root->left = new node(2);
+    root->right = new node(3);
+    root->left->left = new node(4);
+    root->left->right = new node(5);
+    root->right->left = new node(6);
+    root->right->right = new node(7);
 
     vector<int> result = TopView(root);
     for (int i : result) {

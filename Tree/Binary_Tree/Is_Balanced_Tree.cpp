@@ -27,9 +27,9 @@ node* construct(vector <int> &arr){
                 i++;
                 continue;
             }else{
-                node* newNode = new node(arr[i]);
-                st.top().first->left=newNode;
-                st.push({newNode,1});
+                node* newnode = new node(arr[i]);
+                st.top().first->left=newnode;
+                st.push({newnode,1});
                 i++;
             }
         }
@@ -39,9 +39,9 @@ node* construct(vector <int> &arr){
                 i++;
                 continue;
             }else{
-                node* newNode = new node(arr[i]);
-                st.top().first->right=newNode;
-                st.push({newNode,1});
+                node* newnode = new node(arr[i]);
+                st.top().first->right=newnode;
+                st.push({newnode,1});
                 i++;
             }
         }
