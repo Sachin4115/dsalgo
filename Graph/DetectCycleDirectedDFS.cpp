@@ -24,9 +24,30 @@ bool isCyclicDFS(vector<vector<int>> &adj) {
     return 0;
 }
 
+bool funOpt(vector<vector<int>> &adj, vector<int> &v,int c){
+    v[c]=1;
+    for(int i : adj[c]){
+        if(!v[i]) if(funOpt(adj,v,i)) return 1;
+        if(v[i]==1) return 1;
+    }
+    v[c]=2;
+    return 0;
+}
+
+bool isCyclicDFSOpt(vector<vector<int>> &adj) {
+    int n = adj.size();
+    vector<int>vis(n,0);
+    for(int i=0;i<n;i++){
+        if(!vis[i])
+            if(funOpt(adj,vis,i)) return 1;
+    }
+    return 0;
+}
+
 int main()
 {
     vector<vector<int>> arr= {{1},{2},{3},{3}};
-    cout<<isCyclicDFS(arr);
+    cout<<isCyclicDFS(arr)<<endl;
+    cout<<isCyclicDFSOpt(arr)<<endl;
     return 0;
 }
